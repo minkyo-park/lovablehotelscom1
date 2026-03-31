@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    --background: 30 25% 97%;
+    --foreground: 220 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 12%;
+
+    --primary: 355 78% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 25% 94%;
+    --secondary-foreground: 220 30% 12%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 35 92% 52%;
+    --accent-foreground: 35 90% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 18% 90%;
+    --input: 220 18% 90%;
+    --ring: 355 78% 48%;
+
+    --radius: 0.75rem;
+
+    --hotels-red: 355 78% 48%;
+    --hotels-dark: 220 30% 12%;
+    --hotels-gold: 35 92% 52%;
+    --hotels-cream: 30 25% 97%;
+    --hotels-navy: 220 55% 22%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(355 78% 48%), hsl(355 78% 38%));
+    --gradient-gold: linear-gradient(135deg, hsl(35 92% 52%), hsl(25 85% 48%));
+    --gradient-dark: linear-gradient(135deg, hsl(220 55% 22%), hsl(220 40% 15%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 20% 98%));
+
+    --shadow-card: 0 4px 24px -4px hsl(220 30% 12% / 0.08);
+    --shadow-card-hover: 0 8px 32px -4px hsl(220 30% 12% / 0.15);
+    --shadow-hero: 0 20px 60px -15px hsl(355 78% 48% / 0.25);
+    --shadow-button: 0 4px 14px -2px hsl(355 78% 48% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .gold-gradient {
+    background: var(--gradient-gold);
+  }
+
+  .dark-gradient {
+    background: var(--gradient-dark);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-shadow:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+  }
+
+  .btn-cta {
+    background: var(--gradient-hero);
+    color: white;
+    box-shadow: var(--shadow-button);
+    transition: all 0.3s ease;
+  }
+
+  .btn-cta:hover {
+    box-shadow: 0 6px 20px -2px hsl(355 78% 48% / 0.5);
+    transform: translateY(-1px);
+  }
+
+  .btn-gold {
+    background: var(--gradient-gold);
+    color: hsl(var(--hotels-dark));
+    box-shadow: 0 4px 14px -2px hsl(35 92% 52% / 0.4);
+    transition: all 0.3s ease;
+  }
+
+  .btn-gold:hover {
+    box-shadow: 0 6px 20px -2px hsl(35 92% 52% / 0.5);
+    transform: translateY(-1px);
+  }
+
+  .section-padding {
+    @apply px-4 py-12 md:px-6 lg:px-8 lg:py-16;
+  }
+
+  .container-content {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .discount-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-bold;
+    background: hsl(var(--primary) / 0.1);
+    color: hsl(var(--primary));
+  }
+
+  .table-responsive {
+    @apply w-full overflow-x-auto;
+  }
+
+  .table-responsive table {
+    @apply w-full min-w-0;
+  }
+
+  @media (max-width: 768px) {
+    .table-responsive table {
+      @apply text-sm;
+    }
+    .table-responsive th,
+    .table-responsive td {
+      @apply px-2 py-2;
+      word-break: keep-all;
+    }
+  }
+}
