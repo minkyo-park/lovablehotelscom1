@@ -11,6 +11,7 @@ interface DiscountCodeCardProps {
   note?: string;
   image: string;
   badge?: string;
+  href?: string;
 }
 
 const DiscountCodeCard = ({
@@ -24,6 +25,7 @@ const DiscountCodeCard = ({
   note,
   image,
   badge,
+  href,
 }: DiscountCodeCardProps) => {
   return (
     <article className="bg-card rounded-lg md:rounded-xl overflow-hidden card-shadow border border-border">
@@ -71,7 +73,7 @@ const DiscountCodeCard = ({
           </p>
         )}
 
-        <CopyCodeButton code={code} />
+        <CopyCodeButton code={code} href={href} />
       </div>
     </article>
   );

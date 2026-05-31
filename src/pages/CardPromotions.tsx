@@ -94,8 +94,8 @@ const CardPromotions = () => {
     "@type": "Article",
     headline: "2026년 호텔스닷컴 카드사 제휴 프로모션 총정리",
     description: "NH농협, KB국민, 삼성, 현대, 하나, 롯데, BC카드, 토스뱅크 등 8개 카드사 호텔스닷컴 제휴 할인 프로모션 상세 분석.",
-    datePublished: "2026-03-01",
-    dateModified: "2026-03-08",
+    datePublished: "2026-06-01",
+    dateModified: "2026-06-07",
     author: { "@type": "Organization", name: "호텔스닷컴 할인코드" },
   };
 

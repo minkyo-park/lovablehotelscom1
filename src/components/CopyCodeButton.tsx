@@ -8,9 +8,10 @@ interface CopyCodeButtonProps {
   code: string;
   label?: string;
   variant?: "default" | "large";
+  href?: string;
 }
 
-const CopyCodeButton = ({ code, label = "코드 복사 & 적용하기", variant = "default" }: CopyCodeButtonProps) => {
+const CopyCodeButton = ({ code, label = "코드 복사 & 적용하기", variant = "default", href }: CopyCodeButtonProps) => {
   const [copied, setCopied] = useState(false);
 
   const handleClick = () => {
@@ -21,7 +22,7 @@ const CopyCodeButton = ({ code, label = "코드 복사 & 적용하기", variant 
       });
       setTimeout(() => setCopied(false), 2000);
     });
-    window.open(AFFILIATE_LINK, "_blank", "noopener,noreferrer");
+    window.open(href ?? AFFILIATE_LINK, "_blank", "noopener,noreferrer");
   };
 
   if (variant === "large") {
