@@ -23,9 +23,9 @@ const Index = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "호텔스닷컴 할인코드 및 쿠폰 7월",
+    name: "호텔스닷컴 할인코드 및 쿠폰 8월",
     url: "https://lvhts.agd-offer.co.kr",
-    description: "2026년 7월 최신 호텔스닷컴 할인코드 및 쿠폰 총정리. 네이버페이 10% 할인, 카드사 프로모션, 최대 20% 할인 쿠폰 코드를 확인하세요.",
+    description: "2026년 8월 최신 호텔스닷컴 할인코드 및 쿠폰 총정리. 네이버페이 10% 할인, 카드사 프로모션, 최대 20% 할인 쿠폰 코드를 확인하세요.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://lvhts.agd-offer.co.kr/?q={search_term_string}",
@@ -47,7 +47,7 @@ const Index = () => {
       },
       {
         "@type": "Question",
-        name: "2026년 7월 호텔스닷컴 최대 할인율은?",
+        name: "2026년 8월 호텔스닷컴 최대 할인율은?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "네이버페이 전용 코드 NPAY10으로 10% 할인이 가능하며, NH농협카드 프로모션을 통해 최대 20%까지 할인받을 수 있습니다.",
@@ -78,7 +78,7 @@ const Index = () => {
         <div className="relative container-content section-padding !py-20 md:!py-32">
           <div className="max-w-2xl">
             <span className="discount-badge mb-4 inline-block !bg-primary/20 !text-primary-foreground border border-primary-foreground/20">
-              2026년 7월 최신
+              2026년 8월 최신
             </span>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-primary-foreground leading-tight mb-6">
               호텔스닷컴 할인코드
@@ -112,7 +112,7 @@ const Index = () => {
               { icon: Tag, label: "최대 할인율", value: "20%", desc: "NH농협카드" },
               { icon: Star, label: "추천 코드", value: "NPAY10", desc: "10% 할인" },
               { icon: Clock, label: "투숙 가능", value: "2027.06", desc: "DT26 코드" },
-              { icon: Shield, label: "검증 코드", value: "4개+", desc: "2026년 7월" },
+              { icon: Shield, label: "검증 코드", value: "4개+", desc: "2026년 8월" },
             ].map((stat) => (
               <div key={stat.label} className="text-center p-4 rounded-xl bg-secondary/50">
                 <stat.icon className="mx-auto mb-2 text-primary" size={28} />
@@ -130,7 +130,7 @@ const Index = () => {
         <div className="container-content">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-black text-foreground mb-3">
-              🎟️ 2026년 7월 사용 가능한 할인코드
+              🎟️ 2026년 8월 사용 가능한 할인코드
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               아래 할인코드들은 모두 검증된 공식 코드입니다. 코드를 복사하고 바로 호텔스닷컴에서 적용해보세요.
@@ -139,11 +139,11 @@ const Index = () => {
 
           <div className="grid grid-cols-2 gap-4 md:gap-6">
             <DiscountCodeCard
-              code="JUNE15"
+              code="AUGUST15"
               discount="15%"
               title="전 지역 숙소 15% — 역대 최대 할인율!"
-              description="전 지역 숙소 15% 즉시 할인. 호텔스닷컴 역대 최대 할인율로, 최대 7만 원까지 할인받을 수 있습니다. 7월 한 달간만 발급되는 한정 코드이니 서둘러 예약하세요."
-              period="2026.06.01 ~ 2026.06.30"
+              description="전 지역 숙소 15% 즉시 할인. 호텔스닷컴 역대 최대 할인율로, 최대 7만 원까지 할인받을 수 있습니다. 8월 한 달간만 발급되는 한정 코드이니 서둘러 예약하세요."
+              period="2026.08.01 ~ 2026.08.31"
               stayPeriod="~ 2026.12.31"
               condition="전용 프로모션 링크 접속 필수, 최대 7만 원 할인"
               note="호텔스닷컴 역대 최대 할인율(15%)! 최대 7만 원 할인, 12월 말까지 투숙 가능."
@@ -156,7 +156,7 @@ const Index = () => {
               discount="10%"
               title="가족 여행 숙소 10% 할인"
               description="가족 여행 숙소 10% 즉시 할인. 가족 여행 숙소 특가와 함께 제공되지만 해당 페이지 외 숙소에도 모두 적용 가능합니다(일부 적용 불가 숙소 제외)."
-              period="2026.05.18 ~ 2026.06.17"
+              period="2026.07.18 ~ 2026.08.17"
               stayPeriod="~ 2026.09.30"
               condition="전용 프로모션 링크 접속 필수, 일부 숙소 제외"
               note="가족 여행 특가와 별도로 일반 숙소에도 폭넓게 적용되는 10% 코드."
@@ -168,9 +168,9 @@ const Index = () => {
               code="NPAY10"
               discount="10%"
               title="네이버페이 전용 — 최고 할인율"
-              description="전 세계 호텔 10% 즉시 할인. 7월에 발급된 네이버페이 전용 코드로 여름휴가나 추석 연휴 여행을 미리 예약하기에 최적입니다."
-              period="2026.06.01 ~ 2026.06.30"
-              stayPeriod="2026.06.01 ~ 2026.10.31"
+              description="전 세계 호텔 10% 즉시 할인. 8월에 발급된 네이버페이 전용 코드로 여름휴가나 추석 연휴 여행을 미리 예약하기에 최적입니다."
+              period="2026.08.01 ~ 2026.08.31"
+              stayPeriod="2026.08.01 ~ 2026.12.31"
               condition="전용 프로모션 링크 접속 필수"
               note="현재 제공되는 코드 중 가장 높은 할인율(10%). 여름·추석 시즌까지 투숙 가능!"
               image={codeNpay10}
@@ -181,10 +181,10 @@ const Index = () => {
               discount="8%"
               title="전 세계 호텔 기본 할인코드"
               description="전 세계 호텔 8% 즉시 할인. 네이버페이 조건이 맞지 않는 경우 이 코드를 사용하세요. 투숙 기간이 2027년까지 열려 있어 장거리 선예약에 유리합니다."
-              period="2026.06.01 ~ 2026.06.30"
-              stayPeriod="2026.06.01 ~ 2027.06.30"
+              period="2026.08.01 ~ 2026.08.31"
+              stayPeriod="2026.08.01 ~ 2027.08.31"
               condition="전용 프로모션 링크 접속 필수"
-              note="2027년 7월까지 투숙 가능! 내년 여행도 미리 예약 가능한 장기 코드."
+              note="2027년 8월까지 투숙 가능! 내년 여행도 미리 예약 가능한 장기 코드."
               image={codeDt26}
               badge="📅 장기 유효"
             />
@@ -239,13 +239,13 @@ const Index = () => {
                     <tr className="border-b border-border bg-primary/5">
                       <td className="p-3 font-mono font-bold text-primary">NPAY10</td>
                       <td className="p-3 text-center font-bold">10%</td>
-                      <td className="p-3 text-center text-muted-foreground">2026.10</td>
+                      <td className="p-3 text-center text-muted-foreground">2026.12</td>
                       <td className="p-3 text-center text-muted-foreground">네이버페이</td>
                     </tr>
                     <tr className="border-b border-border">
                       <td className="p-3 font-mono font-bold">DT26</td>
                       <td className="p-3 text-center font-bold">8%</td>
-                      <td className="p-3 text-center text-muted-foreground">2027.06</td>
+                      <td className="p-3 text-center text-muted-foreground">2027.08</td>
                       <td className="p-3 text-center text-muted-foreground">없음</td>
                     </tr>
                     <tr className="border-b border-border bg-primary/5">
@@ -287,9 +287,9 @@ const Index = () => {
             <img src={savingsStrategy} alt="호텔스닷컴 최대 절약 전략" className="rounded-xl card-shadow w-full" loading="lazy" />
             <div className="space-y-4">
               {[
-                { icon: TrendingUp, title: "7월 내 해외 호텔 예약", desc: "NPAY10(10%) → 현재 최고 할인율. 네이버페이 결제 시 즉시 적용." },
-                { icon: Clock, title: "여름/추석 시즌 선예약", desc: "NPAY10은 10월까지 투숙 가능 → 시즌 특가를 미리 확보하세요." },
-                { icon: Award, title: "장거리 선예약 (내년)", desc: "DT26(8%)은 2027년 7월까지 투숙 가능 → 내년 여행 미리 예약." },
+                { icon: TrendingUp, title: "8월 내 해외 호텔 예약", desc: "NPAY10(10%) → 현재 최고 할인율. 네이버페이 결제 시 즉시 적용." },
+                { icon: Clock, title: "여름/추석 시즌 선예약", desc: "NPAY10은 12월까지 투숙 가능 → 시즌 특가를 미리 확보하세요." },
+                { icon: Award, title: "장거리 선예약 (내년)", desc: "DT26(8%)은 2027년 8월까지 투숙 가능 → 내년 여행 미리 예약." },
                 { icon: CreditCard, title: "카드 할인 중복 활용", desc: "코드 적용 후 NH농협카드(최대 20%) 등 카드사 할인 중복 가능 여부 확인!" },
                 { icon: Star, title: "골드 회원 혜택 활용", desc: "연 30박 달성 시 무료 식음료, 객실 업그레이드 등 추가 혜택." },
               ].map((item) => (
