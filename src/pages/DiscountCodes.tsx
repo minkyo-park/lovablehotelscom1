@@ -22,10 +22,10 @@ const DiscountCodes = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "2026년 8월 호텔스닷컴 할인코드 전체 모음",
+    headline: "2026년 9월 호텔스닷컴 할인코드 전체 모음",
     description: "호텔스닷컴에서 사용 가능한 모든 할인코드를 상세히 분석합니다. NPAY10, DT26, HAPPYLNY 등 검증된 코드 총정리.",
     datePublished: "2026-06-01",
-    dateModified: "2026-06-07",
+    dateModified: "2026-09-01",
     author: { "@type": "Organization", name: "호텔스닷컴 할인코드" },
   };
 
@@ -60,7 +60,7 @@ const DiscountCodes = () => {
             호텔스닷컴 할인코드 전체 모음
           </h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl">
-            2026년 8월 기준, 검증된 모든 호텔스닷컴 할인코드를 상세히 분석하고 비교합니다.
+            2026년 9월 기준, 검증된 모든 호텔스닷컴 할인코드를 상세히 분석하고 비교합니다.
             각 코드의 할인율, 유효 기간, 적용 조건을 꼼꼼히 확인하세요.
           </p>
         </div>
@@ -104,37 +104,6 @@ const DiscountCodes = () => {
             🎟️ 공식 할인코드 상세 분석
           </h2>
 
-          {/* AUGUST15 Detail — 역대 최대 */}
-          <article className="mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-              <img src={codeNpay10} alt="AUGUST15 할인코드 15% 할인" className="rounded-xl card-shadow w-full" loading="lazy" />
-              <div>
-                <span className="discount-badge mb-3">👑 역대 최대 15%</span>
-                <h3 className="text-xl md:text-2xl font-black text-foreground mb-3">
-                  ⭐ AUGUST15 — 전 지역 숙소 15% 할인 (역대 최대!)
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  AUGUST15는 호텔스닷컴이 제공한 역대 최대 할인율(15%)의 코드로, 전 지역 숙소에 적용됩니다.
-                  최대 7만 원까지 할인되며, 8월 한 달간만 발급되는 한정 코드입니다.
-                  올해 12월 말까지 투숙이 가능해 여름·가을·연말 여행을 모두 미리 예약할 수 있습니다.
-                </p>
-                <div className="table-responsive mb-4">
-                  <table className="w-full text-sm border-collapse">
-                    <tbody>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">할인코드</td><td className="p-2 font-mono font-bold text-primary">AUGUST15</td></tr>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">할인율</td><td className="p-2 text-muted-foreground">전 지역 숙소 15% 즉시 할인 (역대 최대)</td></tr>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">할인 한도</td><td className="p-2 text-muted-foreground">최대 7만 원 할인</td></tr>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">예약 기간</td><td className="p-2 text-muted-foreground">2026년 8월 1일 ~ 8월 31일</td></tr>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">투숙 기간</td><td className="p-2 text-muted-foreground">~ 2026년 12월 31일</td></tr>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">결제 조건</td><td className="p-2 text-muted-foreground">전용 프로모션 링크 접속 필수</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <CopyCodeButton code="AUGUST15" label="AUGUST15 복사 & 적용" variant="large" href={EXCLUSIVE_LINK} />
-              </div>
-            </div>
-          </article>
-
           {/* NPAY10 Detail */}
           <article className="mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -145,7 +114,7 @@ const DiscountCodes = () => {
                   ① NPAY10 — 네이버페이 전용 10% 할인
                 </h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  8월에 발급된 네이버페이 전용 코드는 올해 12월 31일까지 투숙이 가능해,
+                  9월에 발급된 네이버페이 전용 코드는 올해 12월 31일까지 투숙이 가능해,
                   여름휴가나 추석 연휴 여행을 미리 예약하기에 가장 적합한 코드입니다.
                   할인율 10%는 호텔스닷컴에서 현재 제공하는 코드 중 가장 높은 편에 속합니다.
                 </p>
@@ -154,7 +123,7 @@ const DiscountCodes = () => {
                     <tbody>
                       <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">할인코드</td><td className="p-2 font-mono font-bold text-primary">NPAY10</td></tr>
                       <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">할인율</td><td className="p-2 text-muted-foreground">전 세계 호텔 10% 즉시 할인</td></tr>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">예약 기간</td><td className="p-2 text-muted-foreground">2026년 8월 1일 ~ 8월 31일</td></tr>
+                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">예약 기간</td><td className="p-2 text-muted-foreground">2026년 9월 1일 ~ 9월 30일</td></tr>
                       <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">투숙 기간</td><td className="p-2 text-muted-foreground">2026년 8월 1일 ~ 12월 31일</td></tr>
                       <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">결제 조건</td><td className="p-2 text-muted-foreground">전용 프로모션 링크 접속 필수</td></tr>
                     </tbody>
@@ -177,7 +146,7 @@ const DiscountCodes = () => {
                   ② DT26 — 전 세계 호텔 8% 할인
                 </h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  DT26는 2026년 8월 기준으로 확인된 전 세계 적용 기본 코드입니다.
+                  DT26는 2026년 9월 기준으로 확인된 전 세계 적용 기본 코드입니다.
                   네이버페이 코드(NPAY10, 10%)가 있다면 그쪽이 더 높은 할인율이지만,
                   네이버페이 조건이 맞지 않는 경우 이 코드를 사용하면 됩니다.
                   투숙 기간이 2027년 8월까지여서 장거리 선예약에도 유용합니다.
@@ -187,7 +156,7 @@ const DiscountCodes = () => {
                     <tbody>
                       <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">할인코드</td><td className="p-2 font-mono font-bold text-primary">DT26</td></tr>
                       <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">할인율</td><td className="p-2 text-muted-foreground">전 세계 호텔 8% 즉시 할인</td></tr>
-                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">예약 기간</td><td className="p-2 text-muted-foreground">2026년 8월 1일 ~ 8월 31일</td></tr>
+                      <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">예약 기간</td><td className="p-2 text-muted-foreground">2026년 9월 1일 ~ 9월 30일</td></tr>
                       <tr className="border-b border-border"><td className="p-2 font-semibold text-foreground">투숙 기간</td><td className="p-2 text-muted-foreground">2026년 8월 1일 ~ 2027년 8월 31일</td></tr>
                     </tbody>
                   </table>
@@ -258,14 +227,14 @@ const DiscountCodes = () => {
               <tbody>
                 {[
                   ["할인율", "10%", "8%", "10%", "5%"],
-                  ["예약 마감", "8/31", "8/31", "12/31", "상시"],
+                  ["예약 마감", "9/30", "9/30", "12/31", "상시"],
                   ["투숙 기한", "12/31", "2027.08", "12/31", "상시"],
                   ["결제 조건", "네이버페이", "없음", "토스뱅크 앱", "없음"],
                   ["최소 금액", "없음", "없음", "20만 원", "없음"],
                   ["할인 한도", "없음", "없음", "3만 원", "없음"],
                   ["체인 호텔", "❌", "❌", "❌", "❌"],
                   ["장기 선예약", "⚠️ 12월까지", "✅ 2027년", "⚠️ 12월까지", "✅"],
-                  ["추천 상황", "8월 예약 최적", "장기 선예약", "소액 예약", "대안 코드"],
+                  ["추천 상황", "9월 예약 최적", "장기 선예약", "소액 예약", "대안 코드"],
                 ].map((row, i) => (
                   <tr key={i} className={`border-b border-border ${i % 2 === 0 ? "bg-secondary/30" : ""}`}>
                     {row.map((cell, j) => (
@@ -283,7 +252,7 @@ const DiscountCodes = () => {
           <h3 className="text-xl font-black text-foreground mb-4">🎯 상황별 추천 코드</h3>
           <div className="grid grid-cols-2 gap-3 md:gap-4">
             {[
-              { scenario: "8월 내 해외 호텔 예약", code: "NPAY10", reason: "가장 높은 10% 할인율. 네이버페이 필수." },
+              { scenario: "9월 내 해외 호텔 예약", code: "NPAY10", reason: "가장 높은 10% 할인율. 네이버페이 필수." },
               { scenario: "여름/추석 시즌 선예약", code: "NPAY10", reason: "12월까지 투숙 가능. 시즌 특가 미리 확보." },
               { scenario: "내년(2027) 여행 예약", code: "DT26", reason: "2027년 8월까지 투숙 가능한 유일한 코드." },
               { scenario: "소액 예약 (20만 원 이상)", code: "HAPPYLNY", reason: "토스뱅크 앱으로 10% 할인, 최대 3만 원." },

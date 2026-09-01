@@ -200,7 +200,7 @@ const Guide = () => {
               <img src={codeNpay10} alt="NPAY10 10% 할인" className="w-24 h-16 rounded-lg object-cover flex-shrink-0" loading="lazy" />
               <div className="flex-1">
                 <p className="font-bold text-foreground text-sm">NPAY10 — 10% 할인</p>
-                <p className="text-xs text-muted-foreground mb-2">네이버페이 전용, 8월 한정</p>
+                <p className="text-xs text-muted-foreground mb-2">네이버페이 전용, 9월 한정</p>
                 <CopyCodeButton code="NPAY10" />
               </div>
             </div>

@@ -145,7 +145,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
           <div className="mt-8 pt-6 border-t border-border text-center text-xs text-muted-foreground">
             <p>© 2026 호텔스닷컴 할인코드. 모든 정보는 참고용이며, 정확한 할인 조건은 호텔스닷컴 공식 사이트에서 확인하세요.</p>
-            <p className="mt-1">기준일: 2026년 8월 | 마지막 업데이트: 2026년 8월 1일</p>
+            <p className="mt-1">기준일: 2026년 9월 | 마지막 업데이트: 2026년 9월 1일</p>
           </div>
         </div>
       </footer>
